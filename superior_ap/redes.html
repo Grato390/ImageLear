@@ -1,0 +1,124 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+
+    <!-- ------------------------------------------------   cero -->
+    <style>
+        img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            cursor: pointer;
+            /* Agrega un cursor para indicar que las imágenes son clickeables */
+        }
+
+        #courses {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #courses button {
+            margin: 5px;
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- --------------------------------------  two     -->
+    <script>
+
+        // Recuperar el dato del almacenamiento local
+        var valuess = localStorage.getItem('value');
+
+
+        // Verificar si la sesión está iniciada
+        if (valuess == 'hello') {
+        } else {
+            // Si la sesión no está iniciada, redirigir al usuario a la página de inicio de sesión
+            window.location.href = 'index.html';
+        }
+    </script>
+
+
+
+
+    <div id="images">
+        <img src="https://i.pinimg.com/564x/39/3b/79/393b79729cd2373f1e9c3ccdb4620370.jpg" onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/63/f7/27/63f727439a7e74ec50ec88e7c50e006e.jpg" onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/c0/e5/13/c0e513285708bab2ddb121beba2597a7.jpg" onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/e3/b9/a8/e3b9a80a4acf53d691fbf2a23a455f75.jpg" onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/54/63/7f/54637f8a22d38d3ace452370d663d670.jpg" onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/2b/a6/f2/2ba6f29d110f5e40fe9ca0658a64110f.jpg" onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/30/36/91/303691b26b9e194a3469c595b66c6539.jpg" onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/5e/d8/8a/5ed88ab6eb438ce2e088a569f9be36c2.jpg " onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/0a/6d/e1/0a6de12059652639e0cdefc4f7886a87.jpg " onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/42/35/62/4235629c4728dd8cfbdeccebc4f82409.jpg " onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/e3/b9/a8/e3b9a80a4acf53d691fbf2a23a455f75.jpg " onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/84/45/13/844513717468a48770e30b=3274bcd8.jpg " onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/b2/52/ea/b252ea0b765216b6fec4d52d4fcff2cf.jpg " onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/1c/6c/41/1c6c4111e5e6c44d4f2=48c376b4ebf.jpg " onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/81/40/e1/8140e14ab48a7ec4d9411bba416eb247.jpg " onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/05/bd/56/05bd5604752f7fd07c81ccf3f677a842.jpg " onclick="toggleSize(this)">
+        <img src0="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.avg.com%2Fes%2Fsignal%2Fipv4-vs-ipv6&psig=AOvVaw2n_Lclt95EAmXL7YoxStgi&ust=1713998246267000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNjfxp2z2YUDFQAAAAAdAAAAABAl " onclick="toggleSize(this)">
+        <img src0="https://www.bonaval.com/images/uploads/2010/03/pila_osi.jpg " onclick="toggleSize(this)">
+        <img src0="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkaR-Co_hlW_N_G41Dr2A_BF1FsthrghOmUVf0F3fdsw&s " onclick="toggleSize(this)">
+        <img src0="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYVKSeti-AZ3eFzNYQVQv_E9S1oRYee2fbirF15BGARJsEj99l-qgXjFzIVLicprABK8fWVVfF-stgv6Rl6lU59IpENTIm7s7pebsVtA5WkkogVcd3_OlTQj0Wyr6oNca_vA2fpD-pP3I/w1200-h630-p-k-no-nu/image083.png " onclick="toggleSize(this)">
+
+
+<!--                 
+            <iframe src="https://www.tiktok.com/@edteam/video/7161902407255919878?q=aprende%20redes&t=1713906540891" width="640" height="760" frameborder="0" allowfullscreen></iframe>
+
+
+
+ -->
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--   dos -->
+
+
+    <script>
+        function toggleSize(clickedImg) {
+            var images = document.querySelectorAll('#images img');
+            images.forEach(function (img) {
+                if (img === clickedImg) {
+                    if (img.style.width === '200px') {
+                        img.style.width = '400px';
+                    } else {
+                        img.style.width = '200px';
+                    }
+                } else {
+                    img.style.width = '200px'; // Restablece el tamaño de todas las demás imágenes
+                }
+            });
+        }
+    </script>
+
+
+
+</body>
+
+</html>

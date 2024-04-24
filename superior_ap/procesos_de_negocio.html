@@ -1,0 +1,104 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+
+    <!-- ------------------------------------------------   cero -->
+    <style>
+        img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            cursor: pointer;
+            /* Agrega un cursor para indicar que las imágenes son clickeables */
+        }
+
+        #courses {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #courses button {
+            margin: 5px;
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- --------------------------------------  two     -->
+    <script>
+
+        // Recuperar el dato del almacenamiento local
+        var valuess = localStorage.getItem('value');
+
+
+        // Verificar si la sesión está iniciada
+        if (valuess == 'hello') {
+        } else {
+            // Si la sesión no está iniciada, redirigir al usuario a la página de inicio de sesión
+            window.location.href = 'index.html';
+        }
+    </script>
+
+
+
+</div>
+
+
+
+    <div id="images">
+        
+        <img src="https://i.pinimg.com/564x/55/7c/68/557c68d22226a4d3321e139aafbd540d.jpg " onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/a7/73/45/a77345e6edd4bea8e616ae5765d0d7ce.jpg " onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/6a/14/e9/6a14e90b96dfb34118326f6ed602ed1e.jpg " onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/12/6d/6a/126d6a092bf653d6bc92fb32885b402d.jpg " onclick="toggleSize(this)">
+        <img src="https://i.pinimg.com/564x/f0/0c/fa/f00cfa7b622c8ea34abcfa0ae6aa1d4c.jpg " onclick="toggleSize(this)">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.blizwork.com%2Ffactores-criticos-gestion-de-procesos-de-negocio%2F&psig=AOvVaw0IogbSUntegUT35nkogY0w&ust=1713994491754000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJDUr5ul2YUDFQAAAAAdAAAAABAE " onclick="toggleSize(this)">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gqs.com.mx%2Fservicios%2Fbpm%2F&psig=AOvVaw0IogbSUntegUT35nkogY0w&ust=1713994491754000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJDUr5ul2YUDFQAAAAAdAAAAABAJ " onclick="toggleSize(this)">
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--   dos -->
+
+
+    <script>
+        function toggleSize(clickedImg) {
+            var images = document.querySelectorAll('#images img');
+            images.forEach(function (img) {
+                if (img === clickedImg) {
+                    if (img.style.width === '200px') {
+                        img.style.width = '400px';
+                    } else {
+                        img.style.width = '200px';
+                    }
+                } else {
+                    img.style.width = '200px'; // Restablece el tamaño de todas las demás imágenes
+                }
+            });
+        }
+    </script>
+
+
+
+</body>
+
+</html>
